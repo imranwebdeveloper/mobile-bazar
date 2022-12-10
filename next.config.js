@@ -6,7 +6,6 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "fdn2.gsmarena.com",
-        port: "",
         pathname: "/vv/**",
       },
     ],
