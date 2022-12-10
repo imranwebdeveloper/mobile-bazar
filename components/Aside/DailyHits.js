@@ -3,18 +3,16 @@ import TR from "../Common/TR";
 
 const DailyHits = () => {
   return (
-    <div className="hidden md:block rounded border">
-      <h2 className="py-3 text-xl text-gray-700 font-bold bg-slate-100 text-center">
-        Daily Interest
-      </h2>
-      <table className="text-sm  w-full text-left ">
+    <div className="hidden md:block rounded border px-3   my-bg-primary ">
+      <h2 className="section_heading px-0">Daily Interest</h2>
+      <table className=" w-full text-left  ">
         <thead className=" ">
           <tr>
             <th className="p-1">Devices</th>
-            <th>Daily Hits</th>
+            <th>Hits</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="">
           <TR name="Samsung Galaxy A53 5G" qty="1220" />
           <TR name="Samsung Galaxy A78" qty="1140" bg />
           <TR name="Samsung Galaxy S22 Ultra 5G" qty="1000" />

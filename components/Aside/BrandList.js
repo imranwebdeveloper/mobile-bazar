@@ -17,11 +17,9 @@ const BrandList = () => {
   // }, [brands, toggle]);
 
   return (
-    <section className=" hidden md:block border rounded">
-      <h2 className="py-3 text-xl font-bold text-gray-700 bg-slate-100 text-center ">
-        Find Your Brand
-      </h2>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 p-2 gap-2 ">
+    <section className=" hidden md:block border rounded my-bg-primary">
+      <h2 className="section_heading">Find Your Brand</h2>
+      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 px-2 mb-4 gap-2 ">
         {categoryList.map((category, index) => {
           return (
             <Link
