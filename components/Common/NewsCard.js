@@ -19,7 +19,7 @@ const NewsCard = ({ img }) => {
         </h3>
         <p className=" mb-2">
           Replacing one reversible USB 2.0 port with another reversible USB 2.0
-          port doesn't sound too practical, but is an impressive feat
+          port does not sound too practical, but is an impressive feat
           nonetheless.
         </p>
         <data className="text-xs text-slate-500">02-April-22</data>
