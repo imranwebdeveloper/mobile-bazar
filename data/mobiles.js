@@ -77,5 +77,3 @@ export const mobiles = [
     price: "45000",
   },
 ];
-
-const t = "fhek".split(" ").join("-");

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import allBrands from "../../data/allBrands";
 
-const SubHeder = () => {
+const SubHeader = () => {
   return (
     <nav
-      className="flex whitespace-nowrap divide-x border-b overflow-x-scroll scrollbar-hide  md:hidden "
+      className="flex whitespace-nowrap divide-x border-b overflow-x-scroll scrollbar-hide md:hidden  "
       role="navigation"
     >
       {allBrands.map((item, index) => {
@@ -20,4 +20,4 @@ const SubHeder = () => {
   );
 };
 
-export default SubHeder;
+export default SubHeader;

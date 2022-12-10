@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "brand": "Samsung",
+    "modal": "Galaxy A04e",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a04e.jpg",
+    "price": "40000"
+  },
+  {
+    "id": "2",
+    "brand": "Samsung",
+    "modal": "Galaxy A23 5G",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a23-5g.jpg",
+    "price": "45000"
+  },
+  {
+    "id": "3",
+    "brand": "Apple",
+    "modal": "iPhone 14 Pro Max",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro-max-.jpg",
+    "price": "100000"
+  },
+  {
+    "id": "4",
+    "brand": "Apple",
+    "modal": "iPhone 14",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg",
+    "price": "80000"
+  },
+  {
+    "id": "5",
+    "brand": "Apple",
+    "modal": "iPhone 13 Pro Max",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg",
+    "price": "70000"
+  },
+  {
+    "id": "6",
+    "brand": "Xiaomi",
+    "modal": "Redmi Note 12 Discovery",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro-discovery-explorer.jpg",
+    "price": "60000"
+  },
+  {
+    "id": "7",
+    "brand": "Xiaomi",
+    "modal": "12S Pro",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-12s-pro.jpg",
+    "price": "65000"
+  },
+  {
+    "id": "8",
+    "brand": "Huawei",
+    "modal": "Pocket S",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/huawei-pocket-s.jpg",
+    "price": "125000"
+  },
+  {
+    "id": "9",
+    "brand": "Huawei",
+    "modal": "nova 9",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-5g.jpg",
+    "price": "35000"
+  },
+  {
+    "id": "10",
+    "brand": "OnePlus",
+    "modal": "Nord N20 5G",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n20-5g-.jpg",
+    "price": "75000"
+  },
+  {
+    "id": "11",
+    "brand": "OnePlus",
+    "modal": "Nord N300",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n300-5g.jpg",
+    "price": "45000"
+  }
+]
