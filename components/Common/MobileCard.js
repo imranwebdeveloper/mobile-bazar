@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-const MobileCard = ({ mobile }) => {
+const MobileCard = ({ mobile, isBrand }) => {
   const router = useRouter();
   const { img, brand, price, modal } = mobile;
 
@@ -27,7 +27,7 @@ const MobileCard = ({ mobile }) => {
       </div>
       <section className=" flex flex-col items-center ">
         <div className=" text-center">
-          <h3 className=" font-semibold ">{brand}</h3>
+          {isBrand ? "" : <h3 className=" font-semibold ">{brand}</h3>}
           <p className="">{modal}</p>
         </div>
         <div className=" flex flex-col justify-center flex-1 text-center font-semibold  ">

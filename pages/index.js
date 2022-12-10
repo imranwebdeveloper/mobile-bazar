@@ -18,7 +18,7 @@ export default function Home() {
           <aside className="flex flex-col gap-2  ">
             <BrandList />
           </aside>
-          <section>
+          <section className="flex flex-col gap-2">
             <Features heading="Top Mobiles" num={[0, 5]} />
             <Features heading="New Mobiles" num={[6, 11]} />
             <div className="flex gap-2 flex-col xl:flex-row">

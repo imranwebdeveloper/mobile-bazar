@@ -6,19 +6,19 @@ const ShortViews = ({ mobile }) => {
   return (
     <article className="rounded mb-4 my-bg-primary py-6 border">
       <div className=" flex items-center justify-center gap-4 ">
-        <div className="rounded p-4  border ">
-          <h1 className="section_heading p-0 mb-2 text-center">
-            {mobile?.brand} {mobile.modal}
-          </h1>
-          <div className="md:flex gap-4">
-            <div className=" flex justify-center items-center   ">
+        <div className="rounded p-4  ">
+          <div className="md:flex items-center gap-4">
+            <div className=" w-48 flex justify-center items-center flex-col   ">
               <Image
                 src={mobile.img}
                 alt="img"
-                width={200}
-                height={200}
+                width={130}
+                height={150}
                 priority
               />
+              <h1 className="text-xl text-center font-bold mt-4">
+                {mobile?.brand} {mobile?.modal}
+              </h1>
             </div>
             <div className=" p-4">
               <MobilePrice />

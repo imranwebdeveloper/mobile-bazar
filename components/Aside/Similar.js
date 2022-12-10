@@ -3,7 +3,7 @@ import Features from "../Section/Features";
 
 const Similar = () => {
   return (
-    <div className="card-grid my-bg-primary px-4 rounded">
+    <div className="card-grid my-bg-primary rounded">
       <Features heading="Check Similar " num={[3, 7]} />
     </div>
   );

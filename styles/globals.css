@@ -15,7 +15,7 @@
   /* -----------------------------Text------------------------- */
 
   .section_heading {
-    @apply p-3 uppercase text-xl font-bold text-gray-700;
+    @apply p-2  bg-[#149777] text-white uppercase text-lg font-bold  rounded-t;
   }
 
   /* ---------------------------------------- color------------------------------- */
@@ -34,11 +34,13 @@
 @layer utilities {
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     grid-auto-rows: auto;
-    gap: 0.5rem;
+    gap: 1rem;
   }
-
+  .pagination-container {
+    min-height: calc(100vh - 120px);
+  }
   /* .grid-layout {
     display: grid;
     grid-template-columns: 256px 1fr 256px;

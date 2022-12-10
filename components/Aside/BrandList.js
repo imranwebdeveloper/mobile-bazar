@@ -19,7 +19,7 @@ const BrandList = () => {
   return (
     <section className=" hidden md:block border rounded my-bg-primary">
       <h2 className="section_heading">Find Your Brand</h2>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 px-2 mb-4 gap-2 ">
+      <ul className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-2 p-2 mb-4 gap-2 ">
         {categoryList.map((category, index) => {
           return (
             <Link
