@@ -7,10 +7,10 @@ const ShortViews = ({ mobile }) => {
     <article className="rounded mb-4 my-bg-primary py-6 border">
       <div className=" flex items-center justify-center gap-4 ">
         <div className="rounded p-4  border ">
-          <h1 className="section_heading p-0 mb-2">
+          <h1 className="section_heading p-0 mb-2 text-center">
             {mobile?.brand} {mobile.modal}
           </h1>
-          <div className="flex gap-4">
+          <div className="md:flex gap-4">
             <div className=" flex justify-center items-center   ">
               <Image
                 src={mobile.img}

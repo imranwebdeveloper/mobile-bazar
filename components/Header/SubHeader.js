@@ -9,7 +9,10 @@ const SubHeader = () => {
     >
       {allBrands.map((item, index) => {
         return (
-          <li key={index} className="list-none px-2 py-1 bg-slate-50  ">
+          <li
+            key={index}
+            className="list-none px-2 py-1 my-bg-primary text-blue-600  "
+          >
             <Link href={`/${item.toLowerCase()}`} passHref>
               {item}
             </Link>

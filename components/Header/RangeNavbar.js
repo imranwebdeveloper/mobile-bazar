@@ -2,7 +2,7 @@ import React from "react";
 
 const RangeNavbar = () => {
   return (
-    <section className="font-semibold container mx-auto py-2 md:py-4 my-bg-secondary">
+    <section className="container mx-auto py-2 md:py-4 my-bg-secondary">
       <ul className="  gap-1 flex-wrap flex-1  flex justify-center items-center">
         <h3>Price :</h3>
         <li className="text-[#0066c0] cursor-pointer  ">
