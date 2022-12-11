@@ -15,7 +15,7 @@
   /* -----------------------------Text------------------------- */
 
   .section_heading {
-    @apply p-2  bg-[#149777] text-white uppercase text-lg font-bold  rounded-t;
+    @apply p-3 uppercase text-lg font-bold  rounded-t;
   }
 
   /* ---------------------------------------- color------------------------------- */
@@ -37,6 +37,9 @@
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     grid-auto-rows: auto;
     gap: 1rem;
+  }
+  .fixed-column {
+    max-height: calc(100vh - 120px);
   }
   .pagination-container {
     min-height: calc(100vh - 120px);

@@ -1,19 +1,24 @@
 import Link from "next/link";
 import React from "react";
+import Logo from "../Admin/Logo";
+import Navigation from "../Admin/Navigation";
 import RangeNavbar from "./RangeNavbar";
 import Search from "./Search";
 import SubHeader from "./SubHeader";
 
 const Header = ({ children }) => {
   return (
-    <div className="drawer  ">
+    <div className="drawer ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
-        <header className=" border-b md:px-4  my-bg-primary ">
+        <header className=" border-b md:px-4  my-bg-primary shadow ">
           <div className="justify-between navbar container mx-auto ">
             <div className="flex-none lg:hidden">
-              <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+              <label
+                htmlFor="my-drawer-3"
+                className="btn drawer-button btn-square btn-ghost"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -45,7 +50,7 @@ const Header = ({ children }) => {
         </header>
         <div>
           <SubHeader />
-          <RangeNavbar />
+          {/* <RangeNavbar /> */}
         </div>
 
         {/* <!-- Page content here --> */}
@@ -55,12 +60,8 @@ const Header = ({ children }) => {
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 bg-base-100">
           {/* <!-- Sidebar content here --> */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
+          <Logo />
+          <Navigation />
         </ul>
       </div>
     </div>

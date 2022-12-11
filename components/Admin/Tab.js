@@ -24,12 +24,12 @@ const Tab = () => {
     // dispatch(tabHandler(item.id));
   };
   return (
-    <section className=" rounded-border divide-x-2 flex shadow  bg-white overflow-hidden rounded-md">
+    <section className=" rounded-border md:divide-x-2 border flex flex-wrap  shadow  bg-white overflow-hidden rounded-md">
       {TabName.map((item) => {
         return (
           <button
             key={item.id}
-            className={`px-4 flex-1 text-xl gap-4 flex items-center justify-center  hover:bg-lime-50 py-8 font-bold ${
+            className={`px-4 flex-1 text-xl gap-4 flex items-center flex-col md:flex-row  justify-center  hover:bg-lime-50 py-8 font-bold ${
               item.name === active && "bg-lime-100"
             }`}
             onClick={() => activeHandler(item)}
