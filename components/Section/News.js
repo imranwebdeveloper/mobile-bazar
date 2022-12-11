@@ -11,24 +11,15 @@ import NewsCard from "../Common/NewsCard";
 const News = () => {
   const router = useRouter();
   return (
-    <section className=" py-3 xl:w-4/6">
-      <h2 className="h2">Latest News</h2>
-      <div className="mt-4 flex flex-col gap-1">
+    <section className=" my-bg-primary border rounded  ">
+      <h2 className="section_heading">Latest News</h2>
+      <div className="flex flex-col gap-2 p-3">
         <NewsCard img={img} />
         <NewsCard img={img2} />
         <NewsCard img={img3} />
         <NewsCard img={img4} />
         <NewsCard img={img5} />
       </div>
-      <button
-        className=" btn-primary mt-4"
-        onClick={() => router.push("/news")}
-      >
-        <span> More News</span>
-        <span className=" mt-1">
-          <HiOutlineArrowNarrowRight />
-        </span>
-      </button>
     </section>
   );
 };

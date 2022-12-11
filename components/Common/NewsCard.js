@@ -6,13 +6,19 @@ const NewsCard = ({ img }) => {
   const router = useRouter();
   return (
     <article
-      className=" center gap-3 rounded-border p-3 flex-col lg:flex-row bg-white min-h-[180px] hover:bg-emerald-50 cursor-pointer"
+      className=" p-2 flex gap-3 border-b  cursor-pointer"
       onClick={() => router.push("/news/post")}
     >
-      <div className="center">
-        <Image src={img} alt="img" width={192} height={120} />
+      <div className="flex justify-center items-center">
+        <Image
+          src={img}
+          alt="img"
+          width={192}
+          height={120}
+          className="rounded"
+        />
       </div>
-      <div className="flex-1 max-w-[500px] mx-auto">
+      <div className="flex-1 mx-auto">
         <h3 className="font-bold mb-2">
           The creator of the first iPhone with USB-C adds a Lightning port to an
           Android phone

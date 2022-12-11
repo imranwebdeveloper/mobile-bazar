@@ -21,10 +21,7 @@ export default function Home() {
           <section className="flex flex-col md:fixed-column  overflow-x-scroll scrollbar-hide gap-2">
             <Features heading="Top Mobiles" num={[0, 5]} />
             <Features heading="New Mobiles" num={[6, 11]} />
-            <div className="flex gap-2 flex-col xl:flex-row">
-              <News />
-              <div>Hello</div>
-            </div>
+            <News />
           </section>
           <aside>
             <DailyHits />
