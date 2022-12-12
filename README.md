@@ -1,3 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+MobileSell is my personal project. I will release it in the future for production. I am trying to add new features regularly.
 
-## Getting Started
+## Build with Frontend
+
+- Tailwind CSS (daisyui)
+- React icons
+- Next.js
+- Redux
+
+## Build with Backend
+
+- Next-auth
+- MongoDB (Mongoose)

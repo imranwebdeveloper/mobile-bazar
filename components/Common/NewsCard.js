@@ -6,7 +6,7 @@ const NewsCard = ({ img }) => {
   const router = useRouter();
   return (
     <article
-      className=" p-2 flex gap-3 border-b  cursor-pointer"
+      className=" p-2 flex flex-col md:flex-row gap-3 border-b  cursor-pointer"
       onClick={() => router.push("/news/post")}
     >
       <div className="flex justify-center items-center">

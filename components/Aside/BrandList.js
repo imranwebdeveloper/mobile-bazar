@@ -1,26 +1,14 @@
 import Link from "next/link";
-// import { useSelector } from "react-redux";
-import { useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-// import allBrands from "../../data/allBrands";
-import { mobiles } from "../../data/mobiles";
 
-const BrandList = () => {
-  const [toggle, setToggle] = useState(false);
-  const [brandList, setBrandList] = useState([]);
-
-  const categoryList = [...new Set(mobiles.map((brand) => brand.brand))];
-  // const brands = useSelector((state) => state.brandList.brands);
-  // useEffect(() => {
-  //   toggle ? setBrandList(brands) : setBrandList(brands.slice(0, 16));
-  // }, [brands, toggle]);
+const BrandList = ({ categories }) => {
+  const brandList = categories.category[0].category;
 
   return (
     <section className=" hidden md:block border rounded my-bg-primary">
       <h2 className="section_heading">Find Your Brand</h2>
       <ul className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-2 p-2 mb-4 gap-2 ">
-        {categoryList.map((category, index) => {
+        {brandList.map((category, index) => {
           return (
             <Link
               href={`/${category.toLowerCase()}`}
