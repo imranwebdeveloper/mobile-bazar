@@ -25,13 +25,6 @@ const BrandList = ({ categories }) => {
             </Link>
           );
         })}
-        {/* <li
-          className=" rounded-md shadow-md text-white bg-[#149777] hover:bg-[#10846F] listItem col-span-2 overflow-hidden px-2 "
-          onClick={() => setToggle(!toggle)}
-        >
-          <a> All Brand </a>
-          <span>{toggle ? <FaChevronUp /> : <FaChevronDown />}</span>
-        </li> */}
       </ul>
     </section>
   );
