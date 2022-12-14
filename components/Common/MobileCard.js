@@ -7,7 +7,7 @@ const MobileCard = ({ mobile, isBrand }) => {
 
   return (
     <article
-      className="transition rounded cursor-pointer hover:scale-105  flex flex-col justify-center gap-2"
+      className="transition text-sm rounded cursor-pointer hover:scale-105  flex flex-col justify-center gap-2"
       onClick={() =>
         router.push(
           `/${brand.toLowerCase()}/${modal.toLowerCase().split(" ").join("-")}`

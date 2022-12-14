@@ -1,13 +1,15 @@
 import Link from "next/link";
-import allBrands from "../../data/allBrands";
+import { useSelector } from "react-redux";
 
 const SubHeader = () => {
+  const category = useSelector((state) => state.category.value);
+
   return (
     <nav
       className="flex whitespace-nowrap divide-x border-b overflow-x-scroll scrollbar-hide md:hidden  "
       role="navigation"
     >
-      {allBrands.map((item, index) => {
+      {category.map((item, index) => {
         return (
           <li
             key={index}

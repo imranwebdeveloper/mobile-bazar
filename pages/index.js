@@ -5,7 +5,7 @@ import Features from "../components/Section/Features";
 import News from "../components/Section/News";
 import Main from "../components/Wrapper/Main";
 
-export default function Home({ categories }) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -16,7 +16,7 @@ export default function Home({ categories }) {
       <Main>
         <div className="grid lg:grid-cols-[300px_1fr_300px] gap-2 mt-4">
           <aside className="flex flex-col gap-2  ">
-            <BrandList categories={categories} />
+            <BrandList />
           </aside>
           <section className="flex flex-col md:fixed-column  overflow-x-scroll scrollbar-hide gap-2">
             <Features heading="Top Mobiles" num={[0, 5]} />
@@ -30,18 +30,4 @@ export default function Home({ categories }) {
       </Main>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  try {
-    const res = await fetch("http://localhost:3000/api/products/category");
-    const categories = await res.json();
-    return {
-      props: {
-        categories,
-      },
-    };
-  } catch (error) {
-    console.log(error.message);
-  }
 }

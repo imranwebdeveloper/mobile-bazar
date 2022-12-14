@@ -4,10 +4,10 @@ const Loading = () => {
   return (
     <div className="flex justify-center items-center min-h-screen w-full">
       <div
-        class="animate-spin inline-block w-12 h-12  border-4 rounded-full text-blue-600"
+        className="animate-spin inline-block w-12 h-12  border-4 rounded-full text-blue-600"
         role="status"
       >
-        <span class="visually-hidden"></span>
+        <span className="visually-hidden"></span>
       </div>
     </div>
   );

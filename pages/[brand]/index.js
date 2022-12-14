@@ -7,25 +7,8 @@ import Pagination from "../../components/Section/Pagination";
 import Main from "../../components/Wrapper/Main";
 
 const BrandProducts = () => {
-  const [data, setData] = useState([]);
-  const [isLoading, setLoading] = useState(false);
   const router = useRouter();
   const path = router.query;
-  console.log(path.brand);
-
-  // useEffect(() => {
-  //   setLoading(true);
-  //   fetch("/api/mobiles")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       const mobile = data.find(
-  //         (item) => item.modal.toLowerCase().split(" ").join("-") === path
-  //       );
-  //       setData(mobile);
-  //       setLoading(false);
-  //     });
-  // }, [router]);
-
   return (
     <Main>
       <div className="grid lg:grid-cols-[300px_1fr_300px] gap-2 mt-4">

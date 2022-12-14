@@ -1,6 +1,5 @@
 import connectDB from "../../../middleware/connectDB";
 import Category from "../../../modal/category";
-import allBrands from "../../../data/allBrands";
 
 const handler = async (req, res) => {
   try {
