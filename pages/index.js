@@ -7,7 +7,6 @@ import Features from "../components/Section/Features";
 import News from "../components/Section/News";
 import Main from "../components/Wrapper/Main";
 import { setCategory } from "../redux/Slice/categorySlice";
-import { server } from "../server";
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
           <section className="flex flex-col md:fixed-column  overflow-x-scroll scrollbar-hide gap-2">
             <Features heading="Top Mobiles" num={[0, 5]} />
             <Features heading="New Mobiles" num={[6, 11]} />
-            <News />
+            {/* <News /> */}
           </section>
           <aside>
             <DailyHits />
