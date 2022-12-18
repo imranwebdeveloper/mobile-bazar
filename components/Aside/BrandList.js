@@ -1,18 +1,17 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { setCategory, toggle } from "../../redux/Slice/categorySlice";
-import { server } from "../../server";
 
 const BrandList = () => {
   const category = useSelector((state) => state.category.top);
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch(`${server}/api/products/category`)
+    fetch(`/api/products/category`)
       .then((response) => response.json())
-      .then((data) => {
-        dispatch(setCategory(data.category[0]));
+      .then(({ category }) => {
+        dispatch(setCategory(category));
       })
       .catch((error) => console.log(error));
   }, [dispatch]);
@@ -37,9 +36,14 @@ const BrandList = () => {
             </Link>
           );
         })}
-        <button className="btn" onClick={() => dispatch(toggle())}>
-          More Brand
-        </button>
+        {category.length > 0 && (
+          <button
+            className="col-span-2 bg-slate-600 rounded text-white px-8 py-2"
+            onClick={() => dispatch(toggle())}
+          >
+            More Brand
+          </button>
+        )}
       </ul>
     </section>
   );

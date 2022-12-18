@@ -1,10 +1,9 @@
-const mongoose = require("mongoose");
-const { Schema } = mongoose;
-const category = Schema({
-  category: [String],
+import mongoose from "mongoose";
+const category = new mongoose.Schema({
+  brands: [String],
 });
 
-var Category =
+const Category =
   mongoose.models.Categories || mongoose.model("Categories", category);
 
 export default Category;

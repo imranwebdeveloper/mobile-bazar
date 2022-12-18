@@ -11,12 +11,13 @@ export const categorySlice = createSlice({
   initialState,
   reducers: {
     setCategory: (state, action) => {
-      state.value = action.payload.category;
-      state.top = action.payload.category.slice(0, 14);
+      state.value = action.payload;
+      state.top = action.payload.slice(0, 14);
     },
     toggle: (state) => {
       if (state.toggle) {
         state.top = state.value.slice(0, 14);
+        state.toggle = !state.toggle;
       } else {
         state.top = state.value;
         state.toggle = !state.toggle;

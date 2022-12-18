@@ -1,9 +1,13 @@
 import Head from "next/head";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import BrandList from "../components/Aside/BrandList";
 import DailyHits from "../components/Aside/DailyHits";
 import Features from "../components/Section/Features";
 import News from "../components/Section/News";
 import Main from "../components/Wrapper/Main";
+import { setCategory } from "../redux/Slice/categorySlice";
+import { server } from "../server";
 
 export default function Home() {
   return (
