@@ -7,7 +7,7 @@ const NewsCard = ({ img }) => {
   return (
     <article
       className=" p-2 flex flex-col md:flex-row gap-3 border-b  cursor-pointer"
-      onClick={() => router.push("/news/post")}
+      onClick={() => router.push("/news")}
     >
       <div className="flex justify-center items-center">
         <Image
@@ -28,7 +28,10 @@ const NewsCard = ({ img }) => {
           port does not sound too practical, but is an impressive feat
           nonetheless.
         </p>
-        <data className="text-xs text-slate-500">02-April-22</data>
+        <div>
+          <p>Imran Nazir</p>
+          <data className="text-xs text-slate-500">02-April-22</data>
+        </div>
       </div>
     </article>
   );

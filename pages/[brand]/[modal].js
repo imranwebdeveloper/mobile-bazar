@@ -28,11 +28,11 @@ const Details = () => {
 
   return (
     <Main>
-      <div className="grid lg:grid-cols-[300px_1fr_350px] gap-2 mt-4">
+      <div className="grid xl:grid-cols-[300px_1fr_300px] gap-2 mt-4">
         <aside className="flex flex-col gap-2  ">
           <BrandList />
         </aside>
-        <section className="md:fixed-column overflow-x-scroll scrollbar-hide">
+        <section className="xl:fixed-column overflow-x-scroll scrollbar-hide">
           {isLoading ? (
             <Loading />
           ) : (

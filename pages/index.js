@@ -17,14 +17,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
-        <div className="grid lg:grid-cols-[300px_1fr_300px] gap-2 mt-4">
+        <div className="grid xl:grid-cols-[300px_1fr_300px] gap-2 mt-4">
           <aside className="flex flex-col gap-2  ">
             <BrandList />
           </aside>
-          <section className="flex flex-col md:fixed-column  overflow-x-scroll scrollbar-hide gap-2">
+          <section className="flex flex-col xl:fixed-column  overflow-x-scroll scrollbar-hide gap-2">
             <Features heading="Top Mobiles" num={[0, 5]} />
             <Features heading="New Mobiles" num={[6, 11]} />
-            {/* <News /> */}
+            <News />
           </section>
           <aside>
             <DailyHits />
