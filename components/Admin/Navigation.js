@@ -5,21 +5,14 @@ import { RiDashboardFill } from "react-icons/ri";
 const Navigation = () => {
   return (
     <>
-      <li className="hover:bg-slate-800 rounded-lg">
-        <Link href="/" className="flex gap-2 items-center p-3 font-semibold ">
-          <span className="text-xl">
-            <FaHome />
-          </span>
-          <span>Home</span>
-        </Link>
-      </li>
+      <li className="hover:bg-slate-800 rounded-lg"></li>
       <li className="hover:bg-slate-800 rounded-lg">
         <Link
           href="/dashboard"
           className="flex gap-2 items-center p-3 font-semibold "
         >
           <span className="text-xl">
-            <RiDashboardFill />
+            <FaHome />
           </span>
           <span>Dashboard</span>
         </Link>

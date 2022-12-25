@@ -9,9 +9,9 @@ import {
 
 const TabName = [
   { id: 1, name: "Mobile", icon: <FaMobile /> },
+  { id: 4, name: "News", icon: <FaNewspaper /> },
   { id: 2, name: "Videos", icon: <FaYoutube /> },
   { id: 3, name: "Client", icon: <FaUsers /> },
-  { id: 4, name: "News", icon: <FaNewspaper /> },
   { id: 5, name: "Mobile Reviews", icon: <FaAccusoft /> },
 ];
 

@@ -5,7 +5,7 @@ import SubHeader from "../Header/SubHeader";
 const Main = ({ children }) => {
   return (
     <Header>
-      <main className="container px-2 md:px-8  ">{children}</main>
+      <main className="container px-2  lg:px-8 ">{children}</main>
     </Header>
   );
 };

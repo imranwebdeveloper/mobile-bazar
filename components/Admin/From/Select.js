@@ -4,7 +4,10 @@ const Select = ({ list }) => {
   return (
     <div className="flex">
       <label className="w-[140px]">Brands</label>
-      <select className="select-md w-full text-inherit border-2 rounded-md">
+      <select
+        className="select-md w-full text-inherit border-2 rounded-md"
+        defaultChecked="Hello"
+      >
         <option disabled selected>
           Pick your mobile brand
         </option>
