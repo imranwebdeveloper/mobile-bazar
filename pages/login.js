@@ -50,7 +50,7 @@ const Login = () => {
         </form>
       </div>
       <p className="py-2 my-2">
-        Don't have an account?
+        Do not have an account?
         <Link href="/signup" className="text-blue-600 px-1 bold">
           Sign Up
         </Link>
