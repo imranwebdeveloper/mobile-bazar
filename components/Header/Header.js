@@ -2,11 +2,13 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../Admin/Logo";
 import Navigation from "../Admin/Navigation";
-import RangeNavbar from "./RangeNavbar";
 import Search from "./Search";
 import SubHeader from "./SubHeader";
+import { useSession, signOut } from "next-auth/react";
 
 const Header = ({ children }) => {
+  const { data: session, status } = useSession();
+
   return (
     <div className="drawer ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -39,11 +41,32 @@ const Header = ({ children }) => {
             </div>
             <Search />
             <div className=" hidden lg:flex flex-1  max-w-[300px]  justify-end ">
-              <ul className="menu menu-horizontal">
+              <ul className="menu menu-horizontal gap-2">
                 {/* <!-- Navbar menu content here --> */}
-                <Link href="/login" className="btn btn-outline btn-sm">
-                  Login
-                </Link>
+
+                {status === "authenticated" ? (
+                  <div className="flex gap-2 items-center">
+                    <button
+                      className="btn btn-outline btn-sm"
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        signOut();
+                      }}
+                    >
+                      Logout
+                    </button>
+                    <div className="avatar placeholder">
+                      <div className="bg-neutral-focus text-neutral-content rounded-full w-10">
+                        <span>{session.user.name[0]}</span>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <Link href="/login" className="btn btn-outline btn-sm">
+                    Login
+                  </Link>
+                )}
               </ul>
             </div>
           </div>
@@ -54,7 +77,7 @@ const Header = ({ children }) => {
         </div>
 
         {/* <!-- Page content here --> */}
-        <div className="container mx-auto">{children}</div>
+        <div>{children}</div>
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>

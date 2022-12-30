@@ -9,6 +9,10 @@
 }
 
 @layer components {
+  .main-section {
+    @apply grid xl:grid-cols-[300px_1fr_300px] gap-2 my-4;
+  }
+
   .add-section {
     @apply grid grid-cols-2 gap-2  p-4 flex-1 bg-white;
   }
@@ -35,6 +39,12 @@
   .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-auto-rows: auto;
+    gap: 1rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-rows: auto;
     gap: 1rem;
   }

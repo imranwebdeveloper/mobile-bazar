@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
-        <div className="grid xl:grid-cols-[300px_1fr_300px] gap-2 mt-4">
+        <div className="main-section">
           <aside className="flex flex-col gap-2  ">
             <BrandList />
           </aside>
