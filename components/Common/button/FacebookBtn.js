@@ -5,7 +5,7 @@ import Link from "next/link";
 const FacebookBtn = () => {
   return (
     <Link
-      href="/api/auth/facebook"
+      href="/api/auth/callback/facebook"
       onClick={(e) => {
         e.preventDefault();
         signIn("facebook", { callbackUrl: "/" });

@@ -4,7 +4,7 @@ import Link from "next/link";
 const GoogleBtn = () => {
   return (
     <Link
-      href="/api/auth/google"
+      href="/api/auth/callback/google"
       className="inline-block px-6 py-2.5  bg-[#ea4335] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
       onClick={(e) => {
         e.preventDefault();
