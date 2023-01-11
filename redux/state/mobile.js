@@ -1,0 +1,46 @@
+export const mobileState = {
+  brandName: "",
+  model: "",
+  releasedDate: "",
+
+  networkBrands: "",
+  simType: "",
+
+  dimensions: "",
+  weight: "",
+  build: "",
+
+  screenSize: "",
+  screenType: "",
+  resolution: "",
+  protection: "",
+
+  os: "",
+  fingerprint: "",
+  SDCard: "",
+  internalStorage: [],
+  processor: "",
+  cpu: "",
+  gpu: "",
+  port: "",
+  audioJack: "",
+  sound: "",
+  color: "",
+  battery: "",
+  charging: "",
+  mainCamera: [],
+  mainFeatures: "",
+  fontCamera: [],
+  frontFeatures: "",
+  wifi: "",
+  bluetooth: "",
+  gps: "",
+  otg: "",
+  fm: "",
+  nfc: "",
+
+  sensor: [],
+  others: [],
+
+  components: [],
+};

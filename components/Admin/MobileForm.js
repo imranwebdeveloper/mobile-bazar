@@ -55,13 +55,13 @@ const MobileForm = () => {
           <Input label="ROM Options" name="romOption" />
           <Input label="RAM Options" name="ramOption" />
           <Input label="SD Card" name="sdCard" />
-          <Input label="OS" name="OS" />
+          <Input label="OS" name="os" />
           <Input label="Fingerprint" name="fingerprint" />
           <Input label="Processor" name="processor" />
-          <Input label="CPU" name="CPU" />
-          <Input label="GPU" name="GPU" />
+          <Input label="CPU" name="cpu" />
+          <Input label="GPU" name="gpu" />
           <Input label="Battery" name="battery" />
-          <Input label="PORT" name="PORT" />
+          <Input label="PORT" name="port" />
           <Input label="Audio Jack" name="audioJack" />
           <Input label="Sound" name="sound" />
         </div>
@@ -75,10 +75,10 @@ const MobileForm = () => {
         <div className="grid grid-cols-2  gap-2 mt-3 mb-2">
           <Input label="Wi-Fi" name="wifi" />
           <Input label="Bluetooth" name="bluetooth" />
-          <Input label="GPS" name="GPS" />
-          <Input label="OTG" name="OTG" />
-          <Input label="FM" name="FM" />
-          <Input label="NFC" name="NFC" />
+          <Input label="GPS" name="gps" />
+          <Input label="OTG" name="otg" />
+          <Input label="FM" name="fm" />
+          <Input label="NFC" name="nfc" />
         </div>
       </Accordion>
 
